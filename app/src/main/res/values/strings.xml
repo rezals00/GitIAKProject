@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">IAK Project</string>
+
+
+    <string name="text_username">Masukan Username</string>
+    <string name="text_password">Masukan Password</string>
+    <string name="text_login_button">Masuk !</string>
+    <string name="text_invaliddata">Username / Password Salah</string>
+    <string name="text_emptydata">Silahkan Isi Username Dan Password Dengan Benar</string>
+    <string name="text_successlogin">Tunggu Sebentar Anda Akan Dialihkan</string>
+    <string name="text_default_email">reza.busoftinc@gmail.com</string>
+    <string name="text_default_name">Erlangga</string>
+    <string name="text_delete_button">Hapus</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_hotel">Data Hotel</string>
+    <string name="text_calc">Calculator</string>
+
+
+</resources>
