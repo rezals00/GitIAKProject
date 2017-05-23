@@ -87,25 +87,25 @@ public class CalculatorActivity extends AppCompatActivity implements CalcInterfa
         cBinding.buttonadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cPresenter.tambah();
+                cPresenter.act("+");
             }
         });
         cBinding.buttonmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cPresenter.kali();
+                cPresenter.act("*");
             }
         });
         cBinding.buttonsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cPresenter.kurang();
+                cPresenter.act("-");
             }
         });
         cBinding.buttondiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cPresenter.bagi();
+                cPresenter.act("/");
             }
         });
         cBinding.buttonC.setOnClickListener(new View.OnClickListener() {

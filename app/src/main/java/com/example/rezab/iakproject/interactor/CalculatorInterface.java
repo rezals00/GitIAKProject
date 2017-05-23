@@ -8,10 +8,7 @@ import android.text.Editable;
 
 public interface CalculatorInterface {
     Integer set(Integer data);
-    void kali();
-    void bagi();
-    void kurang();
-    void tambah();
+    void act(String action);
     void hitung();
     void c();
     String back();

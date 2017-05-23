@@ -31,75 +31,21 @@ public class CalculatorPresenter implements CalculatorInterface {
     }
 
     @Override
-    public void kali() {
+    public void act(String action) {
         if(!ValOne.toString().isEmpty()){
             if(!ValTwo.toString().isEmpty()) {
-                if(!Action.equals("*")){
-                    Action = "*";
+                if(!Action.equals(action)){
+                    Action = action;
                 } else {
                     hitung();
                 }
             } else {
-                Action = "*";
+                Action = action;
             }
         } else  {
             ValOne = TempNumber;
             TempNumber = 0;
         }
-    }
-
-    @Override
-    public void bagi() {
-        if(!ValOne.toString().isEmpty()){
-            if(!ValTwo.toString().isEmpty()) {
-                if(!Action.equals("/")){
-                    Action = "/";
-                } else {
-                    hitung();
-                }
-            } else {
-                Action = "/";
-            }
-        } else  {
-            ValOne = TempNumber;
-            TempNumber = 0;
-        }
-    }
-
-    @Override
-    public void kurang() {
-        if(!ValOne.toString().isEmpty()){
-            if(!ValTwo.toString().isEmpty()) {
-                if(!Action.equals("-")){
-                    Action = "-";
-                } else {
-                    hitung();
-                }
-            } else {
-                Action = "-";
-            }
-        } else  {
-            ValOne = TempNumber;
-            TempNumber = 0;
-        }
-    }
-
-    @Override
-    public void tambah() {
-       if(!ValOne.toString().isEmpty()){
-           if(!ValTwo.toString().isEmpty()) {
-               if(!Action.equals("+")){
-                   Action = "+";
-               } else {
-                   hitung();
-               }
-           } else {
-               Action = "+";
-           }
-       } else  {
-           ValOne = TempNumber;
-           TempNumber = 0;
-       }
     }
 
     @Override
