@@ -11,19 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".CalculatorActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MenuActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CalculatorActivity" android:screenOrientation="portrait" />
+        <activity android:name=".SplashScreen" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GunungActivity">
+        <activity android:name=".GunungActivity" android:screenOrientation="portrait">
         </activity>
         <activity android:name=".DetailActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme"></activity>
     </application>
