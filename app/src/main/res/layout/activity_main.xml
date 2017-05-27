@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/username"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,7 +19,8 @@
         android:hint="@string/text_username"
         android:inputType="textPersonName"
         android:selectAllOnFocus="true"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
         android:id="@+id/password"
@@ -32,7 +34,7 @@
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:textSize="18sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
         android:id="@+id/login"
@@ -43,7 +45,8 @@
         android:layout_alignStart="@+id/password"
         android:layout_below="@+id/password"
         android:layout_marginTop="40dp"
-        android:text="@string/text_login_button" />
+        android:text="@string/text_login_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <ImageView
         android:id="@+id/imageView"

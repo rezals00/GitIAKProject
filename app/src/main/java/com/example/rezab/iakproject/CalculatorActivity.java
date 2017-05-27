@@ -9,14 +9,17 @@ import android.widget.Toast;
 import com.example.rezab.iakproject.databinding.ActivityCalculatorBinding;
 import com.example.rezab.iakproject.interactor.CalcInterface;
 import com.example.rezab.iakproject.presenter.CalculatorPresenter;
+import com.squareup.picasso.Picasso;
 
 public class CalculatorActivity extends AppCompatActivity implements CalcInterface {
     private ActivityCalculatorBinding cBinding;
     private CalculatorPresenter cPresenter;
+    private String gambar = "http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-2.jpg";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         cBinding = DataBindingUtil.setContentView(this,R.layout.activity_calculator);
+        Picasso.with(getApplicationContext()).load(gambar).fit().into(cBinding.imageView3);
         cPresenter = new CalculatorPresenter(this);
 
 

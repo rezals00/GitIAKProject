@@ -24,7 +24,7 @@ public class MenuActivity extends AppCompatActivity {
         menuBinding.hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this,HotelActivity.class);
+                Intent intent = new Intent(MenuActivity.this,GunungActivity.class);
                 startActivity(intent);
             }
         });

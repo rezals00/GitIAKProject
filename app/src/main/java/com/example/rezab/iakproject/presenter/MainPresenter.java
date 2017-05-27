@@ -3,6 +3,7 @@ package com.example.rezab.iakproject.presenter;
 import android.text.TextUtils;
 
 import com.example.rezab.iakproject.MainActivity;
+import com.example.rezab.iakproject.R;
 import com.example.rezab.iakproject.interactor.LoginInterface;
 import com.example.rezab.iakproject.interactor.MainInterface;
 
@@ -12,7 +13,6 @@ import com.example.rezab.iakproject.interactor.MainInterface;
 
 public class MainPresenter implements LoginInterface {
     private MainInterface mainInterface;
-
     public MainPresenter(MainActivity mainActivity) {
         this.mainInterface = mainActivity;
     }
@@ -23,7 +23,7 @@ public class MainPresenter implements LoginInterface {
         if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
             mainInterface.emptydata();
         } else {
-            if(username.equals("reza1234")&& password.equals("reza1234")) {
+            if(username.equals("1")&& password.equals("2")) {
                 mainInterface.success(username);
             } else {
                 mainInterface.invaliddata();
